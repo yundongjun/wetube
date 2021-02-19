@@ -11,7 +11,6 @@ import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
 import routes from "./routes";
-
 const app = express();
 // middleware - 여긴 어플리케이션 (req,res)사용하면 미들웨어
 app.set("view engine", "pug");
