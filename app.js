@@ -20,6 +20,7 @@ app.use(
     }));
  //보안
 app.set("view engine", "pug"); // 퍼그 모듈을 가져오는거
+app.use("/uploads",express.static("uploads"));
 app.use(cookieParser());//쿠키 배열화
 app.use(bodyParser.urlencoded({extended : true}));
 //그치만 body-parser를 쓰면 bodyParser.urlencoded()를 등록하면, 자동으로 req에 body속성이 추가되고 저장된다. 만약 urls에 접근하고싶다면, req.body.urls이다. 인코딩도 default로 UTF-8로 해준다. 이벤트등록할 필요 자체가 사라진다.
